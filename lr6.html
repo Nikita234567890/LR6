@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация на сайте программистов</title>
+</head>
+<body>
+    <h1>Регистрация на сайте программистов</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm-password">Подтвердите пароль:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+        <label for="programming-languages">Изучаемые языки программирования:</label><br>
+        <select id="programming-languages" name="programming-languages" multiple>
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+        </select><br><br>
+
+        <label for="experience">Опыт работы:</label><br>
+        <input type="radio" id="experience-beginner" name="experience" value="beginner">
+        <label for="experience-beginner">Начинающий</label><br>
+        <input type="radio" id="experience-intermediate" name="experience" value="intermediate">
+        <label for="experience-intermediate">Средний</label><br>
+        <input type="radio" id="experience-advanced" name="experience" value="advanced">
+        <label for="experience-advanced">Продвинутый</label><br><br>
+
+        <label for="about">О себе:</label><br>
+        <textarea id="about" name="about" rows="5" cols="30"></textarea><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Я согласен с условиями использования сайта</label><br><br>
+
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+    
+</body>
+</html>
